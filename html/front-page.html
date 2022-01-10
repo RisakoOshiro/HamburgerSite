@@ -3,19 +3,36 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <link rel="icon" type="image/png" href="../img/favicon.png"> <!--- ファビコン --->
         <title>架空ハンバーガショップのwebサイト</title>
         <meta name="description" content="架空のハンバーガーショップのwebサイトです。"> <!--- タイトルバー　検索結果やお気に入りに入れた時のタイトルとして表示される-->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!---googlefonts読込 Roboto--->
+        <link rel="stylesheet" href="/scss/foundation/_reset.scss"> <!-- reset 読込 -->
+        <link rel="stylesheet" href="/css/style.css">               <!-- css   読込 -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> <!-- Fontawesome -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">                  <!---googlefonts読込 Roboto--->
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto&display=swap" rel="stylesheet"> <!---googlefonts読込 M plus--->
 
+
+        
     </head>
 
     <body>
-        <div class="p-gridContainer"> <!-- グリッドレイアウトのための大枠 -->
-            <header> <!-- headerここから -->
-
+        <div class="p-gridContainer">          <!-- グリッドレイアウトのための大枠 -->
+            <header class="p-header l-header"> <!-- headerここから -->
+                <div class="c-wrapper">
+                    <p class="c-menuButton .p-header__menu"> <!-- Menuボタン PCレスポンシブ時は不要-->
+                        <a href="#" class="c-menuButton__link">Menu</a>
+                    </p>
+                </div> <!-- Menuボタンここまで -->
+                <div class="p-header__inner"> <!-- 全デバイス表示部分　PCレスポンシブ時横並び-->
+                    <h1 class="c-logo">
+                        <a href="#" class="c-logo__link">Hamburger</a>
+                    </h1>
+                    <form class="p-search" action="" method="get"> <!-- 検索エリア -->
+                        <input class="p-search__textField" type="text" placeholder="&#xf002; 検索する">
+                        <input class="p-search__button" type="submit" value="検索">
+                    </form>
+                </div>
             </header>
         </div>
     </body>
