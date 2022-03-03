@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="../img/favicon.png"> <!--- ファビコン --->
+        <link rel="icon" type="image/png" href="../img/favicon.png">                <!--- ファビコン --->
         <title>架空ハンバーガショップのwebサイト</title>
         <meta name="description" content="架空のハンバーガーショップのwebサイトです。"> <!--- タイトルバー　検索結果やお気に入りに入れた時のタイトルとして表示される-->
-        <link rel="stylesheet" href="/scss/foundation/_reset.scss"> <!-- reset 読込 -->
-        <link rel="stylesheet" href="/css/style.css">               <!-- css   読込 -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> <!-- Fontawesome -->
+        <link rel="stylesheet" href="/css/_reset.css">                              <!-- reset.css 読込 -->
+        <link rel="stylesheet" href="/css/style.css">                               <!-- style.css   読込 -->
+        <script src="https://kit.fontawesome.com/8dfa257f7d.js" crossorigin="anonymous"></script> <!-- Font Awesome読込-->
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">                  <!---googlefonts読込 Roboto--->
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto&display=swap" rel="stylesheet"> <!---googlefonts読込 M plus--->
 
@@ -18,22 +18,114 @@
 
     <body>
         <div class="p-gridContainer">          <!-- グリッドレイアウトのための大枠 -->
-            <header class="p-header l-header"> <!-- headerここから -->
-                <div class="c-wrapper">
-                    <p class="c-menuButton .p-header__menu"> <!-- Menuボタン PCレスポンシブ時は不要-->
-                        <a href="#" class="c-menuButton__link">Menu</a>
-                    </p>
-                </div> <!-- Menuボタンここまで -->
-                <div class="p-header__inner"> <!-- 全デバイス表示部分　PCレスポンシブ時横並び-->
-                    <h1 class="c-logo">
-                        <a href="#" class="c-logo__link">Hamburger</a>
-                    </h1>
-                    <form class="p-search" action="" method="get"> <!-- 検索エリア -->
-                        <input class="p-search__textField" type="text" placeholder="&#xf002; 検索する">
-                        <input class="p-search__button" type="submit" value="検索">
-                    </form>
+            <header class="l-header">          <!-- header -->
+                <div class="p-header">
+                        <p class="c-menuButton">   <!-- Menuボタン PCレスポンシブ時は不要-->
+                            <a href="#" class="c-menuButton__link">Menu</a>
+                        </p>
+                                            
+                    <div class="p-header__main">   <!-- 全デバイス表示部分　PCレスポンシブ時横並び-->
+                        <h1 class="c-logo">
+                            <a href="#" class="c-logo__link">Hamburger</a>
+                        </h1>
+                        <form class="p-search" action="" method="get"> <!-- 検索エリア -->
+                            <input class="p-search__textField" type="text" placeholder="&#xf002; 検索する">
+                            <input class="p-search__button" type="submit" value="検索">
+                        </form>
+                    </div>
                 </div>
             </header>
+
+            <div class="p-mainvisual">                <!-- mainvisual -->
+                <img class="p-mainvisual__img" src="../img/frontpage-mainvisual.png" alt="円形のプレートにハンバーガーが乗った画像">
+                <h2 class="c-text--white p-mainvisual__title">ダミーサイト</h2>
+            </div>
+
+            <main class="l-main">                     <!-- main -->
+                <div class="p-main">
+                    <section class="c-bg__takeOut p-main__section"> <!-- takeoutセクション-->
+                        <h2 class="c-text--white p-section__heading">Take Out</h2>
+                        <div class="p-section__contents">
+                            <div class="p-box">
+                                <h3 class="c-text--brown p-box__heading">TAKE OUT</h3>
+                                <p class="c-text--brown p-box__text">当店のテイクアウトで利用できる商品を掲載しています。</p>
+                            </div>
+                            <div class="p-box">
+                                <h3 class="c-text--brown p-box__heading">TAKE OUT</h3>
+                                <p class="c-text--brown p-box__text">当店のテイクアウトで利用できる商品を掲載しています。</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="c-bg__eatIn p-main__section"> <!-- eatinセクション-->
+                        <h2 class="c-text--white p-section__heading">Eat In</h2>
+                        <div class="p-section__contents">
+                            <div class="p-box">
+                                <h3 class="c-text--brown p-box__heading">Eat In</h3>
+                                <p class="c-text--brown p-box__text">当店のイートインで利用できる商品を掲載しています。</p>
+                            </div>
+                            <div class="p-box">
+                                <h3 class="c-text--brown p-box__heading">Eat In</h3>
+                                <p class="c-text--brown p-box__text">当店のイートインで利用できる商品を掲載しています。</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <div class="p-map">         <!-- mapエリア レスポンシブによってグレーの領域を変える -->
+                <img class="p-map__img" src="../img/googlemap.png" alt="googlemapのスクリーンショット">
+                <div class="p-map__discription">
+                    <h2 class="p-map__title">見出しが入ります</h2>
+                    <p class="p-map__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+            </div>
+
+            <footer class="l-footer">   <!-- footer -->
+                <div class="p-footer">
+                    <div class="footer__info">
+                        <p class="c-text--white p-footer__text">ショップ情報</p>
+                        <p class="c-text--white p-footer__text">ヒストリー</p>
+                    </div>
+                    <small class="c-copyright">Copyright: RaiseTech</small>
+                </div>
+            </footer>
+
+            <aside class="l-aseide">    <!-- サイドバー レスポンシブによって表示領域が変化する-->
+                <div class="p-aside">
+                    <div class="p-aside__heading">Menu</div>
+                    <ul class="p-menu">
+                        <li class="p-menu__list">バーガー
+                            <ul class="p-manu__items">
+                                <li class="p-menu__itemChild">ハンバーガー</li>
+                                <li class="p-menu__itemChild">チーズバーガー</li>
+                                <li class="p-menu__itemChild">テリヤキバーガー</li>
+                                <li class="p-menu__itemChild">アボカドバーガー</li>
+                                <li class="p-menu__itemChild">フィッシュバーガー</li>
+                                <li class="p-menu__itemChild">ベーコンバーガー</li>
+                                <li class="p-menu__itemChild">チキンバーガー</li>
+                            </ul>
+                        </li>
+                        <li class="p-menu__list">サイド
+                            <ul class="p-manu__items">
+                                <li class="p-menu__itemChild">ポテト</li>
+                                <li class="p-menu__itemChild">サラダ</li>
+                                <li class="p-menu__itemChild">ナゲット</li>
+                                <li class="p-menu__itemChild">コーン</li>
+                            </ul>
+                        </li>
+                        <li class="p-menu__list">ドリンク
+                            <ul class="p-manu__items">
+                                <li class="p-menu__itemChild">コーラ</li>
+                                <li class="p-menu__itemChild">ファンタ</li>
+                                <li class="p-menu__itemChild">オレンジ</li>
+                                <li class="p-menu__itemChild">アップル</li>
+                                <li class="p-menu__itemChild">紅茶(Ice/Hot)</li>
+                                <li class="p-menu__itemChild">コーヒー(Ice/Hot)</li>                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
         </div>
     </body>
 </html>
