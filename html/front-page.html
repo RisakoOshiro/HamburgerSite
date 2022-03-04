@@ -20,17 +20,17 @@
         <div class="p-gridContainer">          <!-- グリッドレイアウトのための大枠 -->
             <header class="l-header">          <!-- header -->
                 <div class="p-header">
-                        <p class="c-menuButton">   <!-- Menuボタン PCレスポンシブ時は不要-->
+                        <p class="c-menuButton p-header__menuButton">   <!-- Menuボタン PCレスポンシブ時は不要-->
                             <a href="#" class="c-menuButton__link">Menu</a>
                         </p>
                                             
                     <div class="p-header__main">   <!-- 全デバイス表示部分　PCレスポンシブ時横並び-->
-                        <h1 class="c-logo">
+                        <h1 class="c-logo p-header__logo">
                             <a href="#" class="c-logo__link">Hamburger</a>
                         </h1>
                         <form class="p-search" action="" method="get"> <!-- 検索エリア -->
-                            <input class="p-search__textField" type="text" placeholder="&#xf002; 検索する">
-                            <input class="p-search__button" type="submit" value="検索">
+                            <input class="p-search__textField" type="search" placeholder="&#xf002; 検索する">
+                            <input class="c-text--gray p-search__button" type="submit" value="検索">
                         </form>
                     </div>
                 </div>
@@ -73,10 +73,11 @@
             </main>
 
             <div class="p-map">         <!-- mapエリア レスポンシブによってグレーの領域を変える -->
-                <img class="p-map__img" src="../img/googlemap.png" alt="googlemapのスクリーンショット">
-                <div class="p-map__discription">
-                    <h2 class="p-map__title">見出しが入ります</h2>
-                    <p class="p-map__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <div class="p-map__container">
+                    <div class="p-map__discription">
+                        <h2 class="p-map__title">見出しが入ります</h2>
+                        <p class="p-map__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    </div>
                 </div>
             </div>
 
@@ -90,8 +91,8 @@
                 </div>
             </footer>
 
-            <aside class="l-aseide">    <!-- サイドバー レスポンシブによって表示領域が変化する-->
-                <div class="p-aside">
+            <!-- <aside class="l-aseide"> -->   <!-- サイドバー レスポンシブによって表示領域が変化する-->
+                <!-- <div class="p-aside">
                     <div class="p-aside__heading">Menu</div>
                     <ul class="p-menu">
                         <li class="p-menu__list">バーガー
@@ -124,7 +125,7 @@
                         </li>
                     </ul>
                 </div>
-            </aside>
+            </aside> -->
 
         </div>
     </body>
