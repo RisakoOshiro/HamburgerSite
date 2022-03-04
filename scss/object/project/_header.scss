@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.p-header {
+    height: 100%;
+    background-color: #FFF7EF;
+    padding: 14px 16px;
+    position: relative;
+
+    &__menuButton {
+        text-align: right;
+    }
+
+    &__logo {
+        text-align: center;
+    }
+}
